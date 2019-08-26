@@ -16,3 +16,12 @@ export interface responseData {
     token: string;
     user: userData;
 }
+
+export interface TodoType {
+    title: string;
+    description: string | null;
+    completed: boolean;
+    priority: number;
+    due: Date | null;
+    _id?: string;
+}
